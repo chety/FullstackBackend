@@ -29,6 +29,12 @@ let notes = [
     date: '2020-07-15T17:59:44.442Z',
     important: false,
   },
+  {
+    id: 6,
+    content: 'Can Mirko',
+    date: '2020-07-15T17:59:44.442Z',
+    important: true,
+  },
 ];
 
 const express = require('express');
