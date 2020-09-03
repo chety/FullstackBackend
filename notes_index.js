@@ -41,11 +41,15 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
+
 //It is used for CORS related errors
 app.use(cors());
 
 //it is used for POST methods. If it is not used, request body will be undefined
 app.use(express.json());
+
+//we are giving build directory to be seen by express
+app.use(express.static('build'));
 
 app.get('/api/notes', (_, res) => {
   res.json(notes);
